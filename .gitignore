@@ -1,0 +1,24 @@
+# Compiled class file
+*.class
+
+# Log files
+*.log
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Gradle files
+.gradle/
+build/
+
+# Maven files
+target/
+
+# Spring Boot generated files
+spring-boot-starter-logging/
+spring-boot-starter-test/
+mvnw
+mvnw.cmd
