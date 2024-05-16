@@ -27,4 +27,21 @@ public class GreetingController {
     }
 
 
+    @GetMapping("/contact")
+    public String contact() {
+        return "Contact Us";
+    }
+
+    @GetMapping("/update")
+    public String contactUser() {
+        return "update user";
+    }
+
+    @GetMapping("/update/admin")
+    public String contactAdmin() {
+        return "update admin";
+    }
+
+
+
 }

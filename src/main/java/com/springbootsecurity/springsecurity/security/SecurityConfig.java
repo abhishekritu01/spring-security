@@ -34,7 +34,9 @@ public class SecurityConfig {
     SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests((requests) -> {
             ((AuthorizeHttpRequestsConfigurer.AuthorizedUrl)requests
+                    .requestMatchers("/contact").permitAll()
                     .requestMatchers("/h2-console/**").permitAll()
+                    .requestMatchers("/update/**").hasRole("ADMIN")
                     .anyRequest()).authenticated();
         });
         http.sessionManagement(session ->
