@@ -1,12 +1,11 @@
 package com.springbootsecurity.springsecurity.controllers;
+
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 
 @RestController
 public class GreetingController {
-
 
     @GetMapping("/hello")
     public String hello() {
@@ -41,6 +40,8 @@ public class GreetingController {
     public String contactAdmin() {
         return "update admin";
     }
+
+
 
 
 
